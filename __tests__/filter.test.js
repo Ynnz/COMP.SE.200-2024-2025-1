@@ -11,8 +11,8 @@ describe('filter', () => {
     });
 
     test('returns an empty array when input array is null or undefined', () => {
-        expect(filter(null, () => true)).toEqual([[]]); // 修改期望值为 [[]]
-        expect(filter(undefined, () => true)).toEqual([[]]); // 修改期望值为 [[]]
+        expect(filter(null, () => true)).toEqual([[]]);
+        expect(filter(undefined, () => true)).toEqual([[]]);
     });
 
     test('works with numbers and a custom predicate', () => {
@@ -22,7 +22,7 @@ describe('filter', () => {
     });
 
     test('handles an empty array', () => {
-        expect(filter([], () => true)).toEqual([[]]); // 修改期望值为 [[]]
+        expect(filter([], () => true)).toEqual([[]]);
     });
 
     test('predicate receives correct arguments', () => {

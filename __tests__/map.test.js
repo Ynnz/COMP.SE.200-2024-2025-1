@@ -15,12 +15,12 @@ describe('map', () => {
     });
 
     test('returns an empty array when input array is null or undefined', () => {
-        expect(map(null, () => true)).toEqual([]); // null 输入
-        expect(map(undefined, () => true)).toEqual([]); // undefined 输入
+        expect(map(null, () => true)).toEqual([]);
+        expect(map(undefined, () => true)).toEqual([]);
     });
 
     test('handles an empty array', () => {
-        expect(map([], (value) => value * 2)).toEqual([]); // 空数组返回空数组
+        expect(map([], (value) => value * 2)).toEqual([]);
     });
 
     test('iteratee receives correct arguments', () => {
