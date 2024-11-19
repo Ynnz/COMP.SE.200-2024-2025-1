@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test:jest": "jest",
-    "test:mocha": "mocha __tests__/*.js"
+    "test:mocha": "mocha __tests__/add.test.js"
   },
 
   "author": "",
