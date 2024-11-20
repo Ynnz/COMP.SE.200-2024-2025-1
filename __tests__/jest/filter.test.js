@@ -1,4 +1,4 @@
-import filter from '../src/filter.js';
+import filter from '../../src/filter.js';
 
 describe('filter', () => {
     test('filters elements based on a predicate', () => {

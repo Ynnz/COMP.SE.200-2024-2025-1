@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import add from '../src/add.js';
+import add from '../../src/add.js';
 
 describe('add', () => {
     it('should add two positive numbers', () => {

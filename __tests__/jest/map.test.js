@@ -1,4 +1,4 @@
-import map from '../src/map.js';
+import map from '../../src/map.js';
 
 describe('map', () => {
     test('maps values to their squares', () => {

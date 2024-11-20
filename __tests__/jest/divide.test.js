@@ -1,4 +1,4 @@
-import divide from '../src/divide.js';
+import divide from '../../src/divide.js';
 
 describe('divide', () => {
     test('divides two positive numbers', () => {

@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "test:jest": "jest",
-    "test:mocha": "mocha __tests__/add.test.js __tests__/reduce.test.js"
+    "test": "npm run test:jest && npm run test:mocha",
+    "test:jest": "jest __tests__/jest",
+    "test:mocha": "mocha __tests__/mocha/*.test.js"
   },
 
   "author": "",
