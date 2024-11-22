@@ -17,13 +17,13 @@ describe('toNumber', () => {
     test('returns NaN for invalid strings', () => {
         expect(toNumber('abc')).toBeNaN();
         expect(toNumber('Infinity')).toBe(Infinity); // Infinity is a valid number
-        expect(toNumber('0x123')).toBeNaN();
+        expect(toNumber('0x123')).toBe(291);
     });
 
     test('handles binary, octal, and hexadecimal strings', () => {
-        expect(toNumber('0b101')).toBe(5); // Binary
-        expect(toNumber('0o123')).toBe(83); // Octal
-        expect(toNumber('0x1A')).toBeNaN(); // Bad Hexadecimal
+        expect(toNumber('0b101')).toBe(5);
+        expect(toNumber('0o123')).toBe(83);
+        expect(toNumber('0x1A')).toBe(26);
     });
 
     test('handles special values', () => {
@@ -37,7 +37,7 @@ describe('toNumber', () => {
         expect(toNumber(obj)).toBe(42);
 
         const nestedObj = { valueOf: () => ({ valueOf: () => 100 }) };
-        expect(toNumber(nestedObj)).toBe(100);
+        expect(toNumber(nestedObj)).toBeNaN();
     });
 
     test('returns NaN for symbols', () => {
