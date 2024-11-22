@@ -13,8 +13,8 @@
   },
   "nyc": {
     "include": [
-      "src/mocha/add.js",
-      "src/mocha/reduce.js"
+      "src/add.js",
+      "src/reduce.js"
     ],
     "exclude": [
       "**/*.test.js",
@@ -28,7 +28,7 @@
     ],
     "extension": [".js"],
     "report-dir": "./coverage",
-    "all": false
+    "all": true
   },
   "author": "",
   "license": "MIT",
