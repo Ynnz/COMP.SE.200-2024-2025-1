@@ -27,7 +27,7 @@
       "html"
     ],
     "extension": [".js"],
-    "report-dir": "./coverage",
+    "report-dir": "./coverage/mocha",
     "all": true
   },
   "author": "",
