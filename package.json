@@ -8,10 +8,8 @@
     "test": "npm run test:jest && npm run test:mocha",
     "test:jest": "jest __tests__/jest",
     "test:mocha": "mocha __tests__/mocha/*.test.js",
-    "test:jest-coverage": "jest --coverage --coverageDirectory=coverage/jest",
-    "test:mocha-coverage": "nyc mocha __tests__/mocha/*.test.js",
-    "merge-coverage": "npx lcov-result-merger 'coverage/**/lcov.info' > coverage/combined-lcov.info",
-    "generate-coverage-report": "genhtml coverage/combined-lcov.info --output-directory coverage/html"
+    "test:jest-coverage": "jest --coverage",
+    "test:mocha-coverage": "nyc mocha __tests__/mocha/*.test.js"
   },
   "nyc": {
     "include": [
@@ -29,7 +27,7 @@
       "html"
     ],
     "extension": [".js"],
-    "report-dir": "./coverage/mocha",
+    "report-dir": "./coverage",
     "all": true
   },
   "author": "",
