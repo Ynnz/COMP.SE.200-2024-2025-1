@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "npm run test:jest && npm run test:mocha",
+    "test": "npm run test:jest && npm run test:mocha && npm run test:jest-coverage && npm run test:mocha-coverage",
     "test:jest": "jest __tests__/jest",
     "test:mocha": "mocha __tests__/mocha/*.test.js",
     "test:jest-coverage": "jest --coverage",
